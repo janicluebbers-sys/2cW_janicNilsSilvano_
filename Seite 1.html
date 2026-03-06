@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>Konfigurator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="index.html">Hauptmenü</a>
+    <a href="Seite 1.html">Konfigurator</a>
+    <a href="Seite 2.html">Technik</a>
+    <a href="Seite 3.html">Historie</a>
+  </div>
+  <img src="ABT-Tuning_RS6_daytonagrau_matt-Hangar-Seite.jpeg" class="hero">
+
+  <div class="content">
+    <h1>Audi RS6 Konfigurator</h1>
+    <p>Konfiguriere hier deinen Audi RS6.</p>
+
+    <form>
+      <label for="farbe">Farbe</label>
+      <select id="farbe">
+        <option>Grau</option>
+        <option>Schwarz</option>
+        <option>Gletscherweiss</option>
+        <option>Blau</option>
+        <option>Rot</option>
+      </select>
+
+      <label for="sitzfarbe">Sitzfarbe</label>
+      <select id="sitzfarbe">
+        <option>Schwarz</option>
+        <option>Rot</option>
+        <option>Grau</option>
+        <option>Cognac</option>
+      </select>
+
+      <label for="felgen">Felgengrösse</label>
+      <select id="felgen">
+        <option>21 Zoll</option>
+        <option>22 Zoll</option>
+      </select>
+
+      <label>Räder</label>
+      <label class="option-line"><input type="radio" name="rad"> 2 Rad</label>
+      <label class="option-line"><input type="radio" name="rad"> 4 Rad</label>
+
+      <label>Extras</label>
+      <label class="option-line"><input type="checkbox"> Carbon Paket</label>
+      <label class="option-line"><input type="checkbox"> Panoramadach</label>
+      <label class="option-line"><input type="checkbox"> Sportabgasanlage</label>
+      <label class="option-line"><input type="checkbox"> Keramikbremsen</label>
+
+      <button type="submit">Konfiguration speichern</button>
+    </form>
+  </div>
+
+</body>
+</html>
