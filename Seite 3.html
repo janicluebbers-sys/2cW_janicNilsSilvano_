@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <title>Historie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="index.html">Hauptmenü</a>
+    <a href="Seite 1.html">Konfigurator</a>
+    <a href="Seite 2.html">Technik</a>
+    <a href="Seite 3.html">Historie</a>
+  </div>
+
+  <img src="ABT-Tuning_RS6_daytonagrau_matt-Hangar-Seite.jpeg" class="hero">
+
+  <div class="content">
+    <h1>Historie</h1>
+    <p>Der Audi RS6 wurde entwickelt, um hohe Leistung mit dem praktischen Aufbau eines Kombis zu verbinden.</p>
+    <p>Im Laufe der Jahre wurde das Modell immer stärker, moderner und sportlicher.</p>
+    <p>Heute gehört der RS6 zu den bekanntesten Hochleistungsmodellen von Audi.</p>
+    <p>Er ist vor allem dafür bekannt, viel Platz und sehr starke Motorleistung in einem Auto zu vereinen.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-box">
+          <h2>C8 RS6 Avant</h2>
+          <h3>seit 2019</h3>
+          <p>Die aktuelle Generation wirkt besonders modern, breit und sportlich.</p>
+
+          <button class="mehrButton" onclick="toggleText('text-c8', this)">Mehr anzeigen</button>
+
+          <div id="text-c8" class="mehrText">
+            <p>Der C8 RS6 Avant wurde deutlich aggressiver gestaltet als seine Vorgänger. Besonders auffällig sind die breitere Front, die grossen Lufteinlässe und die markanten Kotflügel.</p>
+            <p>Er verbindet moderne Technologie mit sehr hoher Leistung und bleibt trotzdem im Alltag gut nutzbar. Genau diese Mischung macht den RS6 bis heute so beliebt.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-box">
+          <h2>C7 RS6 Avant</h2>
+          <h3>ab 2013</h3>
+          <p>Diese Generation brachte ein modernes Design und einen V8-Biturbo-Motor.</p>
+
+          <button class="mehrButton" onclick="toggleText('text-c7', this)">Mehr anzeigen</button>
+
+          <div id="text-c7" class="mehrText">
+            <p>Mit dem C7 wurde der RS6 leichter und moderner. Audi setzte hier nicht mehr auf einen V10, sondern auf einen leistungsstarken V8-Biturbo.</p>
+            <p>Diese Generation war besonders wichtig, weil sie Leistung, Effizienz und modernes Design gut miteinander verband.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-box">
+          <h2>C6 RS6</h2>
+          <h3>ab 2008</h3>
+          <p>Der C6 war besonders bekannt für seinen V10-Biturbo-Motor.</p>
+
+          <button class="mehrButton" onclick="toggleText('text-c6', this)">Mehr anzeigen</button>
+
+          <div id="text-c6" class="mehrText">
+            <p>Der C6 RS6 war eines der extremsten Modelle der Baureihe. Vor allem der V10-Biturbo-Motor machte das Fahrzeug sehr besonders.</p>
+            <p>Diese Generation zeigte deutlich, dass der RS6 nicht nur praktisch, sondern auch technisch sehr beeindruckend sein kann.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-box">
+          <h2>C5 RS6</h2>
+          <h3>ab 2002</h3>
+          <p>Der erste Audi RS6 legte den Grundstein für alle späteren Modelle.</p>
+
+          <button class="mehrButton" onclick="toggleText('text-c5', this)">Mehr anzeigen</button>
+
+          <div id="text-c5" class="mehrText">
+            <p>Der C5 war die erste RS6-Generation und damit der Startpunkt der ganzen Modellreihe. Schon dieses Modell zeigte, dass ein Kombi sehr schnell und gleichzeitig alltagstauglich sein kann.</p>
+            <p>Damit schuf Audi die Grundlage für alle späteren RS6-Modelle, die dieses Konzept weiterentwickelten und noch extremer machten.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleText(id, button) {
+      var text = document.getElementById(id);
+
+      if (text.style.display === "block") {
+        text.style.display = "none";
+        button.innerText = "Mehr anzeigen";
+      } else {
+        text.style.display = "block";
+        button.innerText = "Weniger anzeigen";
+      }
+    }
+  </script>
+
+</body>
+</html>
